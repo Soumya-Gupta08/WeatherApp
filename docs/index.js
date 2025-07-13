@@ -32,8 +32,10 @@ const getWeather=async (city) => {
         wind.innerHTML=`${data.wind.speed} km/h`;
         humidity.innerHTML=`${data.main.humidity}%`;
 
-        const imageName = weatherIcons[data.weather[0].main] || "default.png";
-
+        console.log(data.weather[0].main);
+        
+        const imageName = weatherIcons[data.weather[0].main];
+        console.log(imageName);
         weather.querySelector('img').src=`Images/${imageName}`;
 
         console.log(data.weather[0].main);
