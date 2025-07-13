@@ -21,7 +21,7 @@ const getWeather=async (city) => {
         wind.innerHTML=`${data.wind.speed} km/h`;
         humidity.innerHTML=`${data.main.humidity}%`;
 
-        weather.querySelector('img').src=`Images\\${data.weather[0].main}.png`;
+        weather.querySelector('img').src=`Images/${data.weather[0].main}.png`;
 
         console.log(data);
          
