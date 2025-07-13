@@ -6,6 +6,17 @@ const loc=document.querySelector('.city');
 const input=document.querySelector('#input');
 const weather=document.querySelector('.weather');
 
+const weatherIcons = {
+  Clear: "clear.png",
+  Clouds: "clouds.png",
+  Rain: "rain.png",
+  Drizzle: "drizzle.png",
+  Thunderstorm: "thunderstorm.png",
+  Snow: "snow.png",
+  Mist: "mist.png",
+  Haze: "haze.png"
+};
+
 
 
 const getWeather=async (city) => {
@@ -21,9 +32,11 @@ const getWeather=async (city) => {
         wind.innerHTML=`${data.wind.speed} km/h`;
         humidity.innerHTML=`${data.main.humidity}%`;
 
-        weather.querySelector('img').src=`Images/${data.weather[0].main}.png`;
+        const imageName = weatherIcons[data.weather[0].main] || "default.png";
 
-        console.log(data);
+        weather.querySelector('img').src=`Images/${imageName}`;
+
+        console.log(data.weather[0].main);
          
 
         } else {
