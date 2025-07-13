@@ -61,10 +61,9 @@ WeatherApp/
 └── README.md
 🙋‍♀️ Author
 Soumya Gupta
-📧 soumya10804@gmail.com
+📧 soumyag10804@gmail.com
 🔗 GitHub Profile
 
 ⭐ Show Your Support
 If you found this project helpful or interesting, feel free to star this repository and share it with others!
 
-Let me know if you’d like this exported as a .docx or .pdf file for uploading or presentation.
